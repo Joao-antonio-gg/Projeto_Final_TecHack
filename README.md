@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Ferramenta para detecção de Phishing  
+  
+### Backend   
+Entre na pasta do backend, você encontrará o arquivo `requirements.txt` que contém todas as dependências necessárias para o funcionamento do servidor.  
 
-## Getting Started
 
-First, run the development server:
-
+Primeiramente é necessário instalar as dependências do backend. Para isso, execute o seguinte comando:    
+  
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pip install -r requirements.txt  
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Com as dependências instaladas, você pode iniciar o servidor backend com o seguinte comando:  
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```bash
+uvicorn main:app --reload  
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Acesso ao backend pode ser feito através do endereço `http://localhost:8000/docs` para a documentação interativa.  
 
-## Learn More
+### Frontend
+Entre na pasta do frontend, você encontrará o arquivo `package.json` que contém todas as dependências necessárias para o funcionamento do frontend.
 
-To learn more about Next.js, take a look at the following resources:
+Primeiramente é necessário instalar as dependências do frontend. Para isso, execute o seguinte comando:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm install react-chartjs-2 chart.js
+````
+Com as dependências instaladas, você pode iniciar o servidor frontend com o seguinte comando:
+```bash
+npm run dev
+```
+Acesso ao frontend pode ser feito através do endereço `http://localhost:3000/` para a interface do usuário.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Plugins
 
-## Deploy on Vercel
+Para colocar o Plugins no seu navegador Mozilla Firefox developer, siga os seguintes passos:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Acesse o about:debugging no seu navegador Firefox.
+2. Clique em "This Firefox" no menu lateral.
+3. Clique em "Load Temporary Add-on".
+4. Selecione o arquivo `manifest.json` localizado na pasta do plugin.
+5. O plugin será carregado temporariamente e você poderá testá-lo.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Para acessar o plugin, clique no ícone do plugin na barra de ferramentas do Firefox. Ele abrirá uma janela onde você pode inserir a URL que deseja verificar.
