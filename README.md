@@ -33,7 +33,7 @@ npm run dev
 Acesso ao frontend pode ser feito através do endereço `http://localhost:3000/` para a interface do usuário.
 
 ### Plugins
-
+Antes de tudo precisa ter o backend rodando na sua maquina local. Após isso pode seguir os passos adiante.  
 Para colocar o Plugins no seu navegador Mozilla Firefox developer, siga os seguintes passos:
 
 1. Acesse o about:debugging no seu navegador Firefox.
