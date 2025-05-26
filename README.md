@@ -24,7 +24,7 @@ Entre na pasta do frontend, você encontrará o arquivo `package.json` que cont�
 Primeiramente é necessário instalar as dependências do frontend. Para isso, execute o seguinte comando:
 
 ```bash
-npm install react-chartjs-2 chart.js
+npm install 
 ````
 Com as dependências instaladas, você pode iniciar o servidor frontend com o seguinte comando:
 ```bash
