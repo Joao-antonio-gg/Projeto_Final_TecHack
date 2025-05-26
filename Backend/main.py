@@ -15,8 +15,10 @@ app.add_middleware(
 )
 
 WHITELIST = {
-    "jobnagringa.com.br",
-    "teste.com",
+    "facebook.com",
+    "instagram.com",
+    "google.com",
+    "youtube.com"
     # outros domínios confiáveis...
 }
 

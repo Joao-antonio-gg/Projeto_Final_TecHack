@@ -9,10 +9,10 @@ document.getElementById('verificar').addEventListener('click', () => {
         const resultado = document.getElementById('resultado');
 
         if (data.suspeito) {
-          resultado.innerHTML = `<strong>⚠️ Site suspeito de phishing!</strong><br><br>Causas:<ul>${data.motivos.map(m => `<li>${m}</li>`).join('')}</ul>`;
+          resultado.innerHTML = `<strong>Site suspeito de phishing!</strong><br><br>Causas:<ul>${data.motivos.map(m => `<li>${m}</li>`).join('')}</ul>`;
           resultado.style.color = 'red';
         } else {
-          resultado.innerHTML = `<strong>✅ Site seguro.</strong><br><br>Motivos:<ul>${data.motivos.map(m => `<li>${m}</li>`).join('')}</ul>`;
+          resultado.innerHTML = `<strong>Site seguro.</strong><br><br>Motivos:<ul>${data.motivos.map(m => `<li>${m}</li>`).join('')}</ul>`;
           resultado.style.color = 'green';
         }
       })
